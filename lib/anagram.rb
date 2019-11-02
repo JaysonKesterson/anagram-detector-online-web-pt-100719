@@ -6,7 +6,8 @@ class Anagram
   
  def initialize(word)
    @word = word.split("").sort
-  
+ end 
+ 
  def match(array)
    
    anagrams = []
