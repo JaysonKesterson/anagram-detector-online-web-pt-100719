@@ -9,7 +9,10 @@ class Anagram
  end
   
  def match(array)
-   self.word.match(array.join(" "))
+  if  self.word.match(array.join(" ")) == nil
+    []
+  else
+    
  end
   
   
