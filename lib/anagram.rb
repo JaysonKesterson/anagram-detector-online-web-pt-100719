@@ -5,13 +5,15 @@ class Anagram
   attr_reader :word
   
  def initialize(word)
-   @word = word.split("")
+   @word = word.split("").sort
   
  def match(array)
+   
    anagram = []
-  if  self.word.match(array.join(" ")) == nil
-    anagram
-  else
+   array.collect do |word2|
+     if word2.split("").sort == self.word
+       
+   end
     
  end
   
